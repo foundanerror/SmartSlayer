@@ -8,7 +8,7 @@ intents.typing = False
 bot = commands.Bot(command_prefix="!", intents = intents)
 
 for filename in os.listdir('./cogs'):
-    if filename.endswith(".py"):
+    if filename.endswith(".pdy"):
         bot.load_extension(f'cogs.{filename[:-3]}')
         print(f"Loading: {filename}")
 
